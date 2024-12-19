@@ -1,0 +1,171 @@
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.first {
+    padding-top: 25px;
+
+    font-size: 42px;
+    font-family: "Gruppo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.third {
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.third img {
+    width: 780px;
+    height: 480px;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+ul {
+    padding-left: 0;
+    margin-top: 60px;
+}
+
+ul li {
+    display: inline;
+    padding-left: 20px;
+
+    font-family: "Montserrat", serif;
+    font-size: 12px;
+    color: #333333;
+    letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:link {
+  color: #333333
+}
+
+a:hover {
+  color: #4A90E2;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* 숨기기 */
+#imageInput {
+    display: none;
+}
+
+/* 이미지 스타일 */
+.file-upload img {
+    cursor: pointer;
+    /* 클릭 가능하도록 커서 변경 */
+    transition: 0.3s ease;
+}
+
+/* 호버 효과 */
+.file-upload img:hover {
+    transform: scale(1.02);
+    /* 약간 확대 */
+    filter: brightness(0.7);
+    /* 이미지 어두워짐 */
+}
+
+.overlay:hover .overlay-text {
+    opacity: 1;
+    /* 텍스트 보이기 */
+}
+
+
+/* 오버레이 컨테이너 */
+.file-upload .overlay {
+    position: relative;
+    display: inline-block;
+}
+
+/* 텍스트 스타일 */
+.file-upload .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    /* 기본적으로 보이지 않음 */
+    transition: opacity 0.3s ease;
+}
+
+#label-container {
+    margin-top: 16px;
+    font-family: "Montserrat", serif;
+    font-size: 14px;
+    color: #333333;
+    line-height: 2em;
+}
+
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+    object-fit: cover;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
